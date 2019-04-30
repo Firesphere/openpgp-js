@@ -1,0 +1,29 @@
+{
+  "name": "openpgp",
+  "version": "1.0.0",
+  "description": "openPGP email sending for secure communications",
+  "main": "index.js",
+  "author": "Simon `Firesphere` Erkelens",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "laravel-mix": "^4.0.14",
+    "openpgp": "^4.4.7",
+    "vue-template-compiler": "^2.6.6"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0"
+  },
+  "scripts": {
+    "watch": "webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --watch",
+    "build": "webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js webpack",
+    "package": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --profile --json > compilation-stats.json",
+    "lint-js": "node_modules/.bin/eslint client/src/js",
+    "lint-sass": "node_modules/.bin/sass-lint -v"
+  }
+}

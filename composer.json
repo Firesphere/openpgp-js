@@ -1,0 +1,30 @@
+{
+  "name": "firesphere/openpgp",
+  "description": "Encrypt emails from your site with PGP",
+  "keywords": [
+    "silverstripe",
+    "OpenPGP",
+    "Security"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Simon 'Firesphere' Erkelens",
+      "email": "simonerkelens@silverstripe.com"
+    }
+  ],
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  },
+  "extra": {
+    "branch-alias": {
+      "1.x-dev": "1.1.x-dev",
+      "dev-master": "1.x-dev"
+    },
+    "expose": [
+      "dist"
+    ]
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev"
+}
